@@ -1,7 +1,7 @@
 <button class="btn" (click)="randomShuffle(2000)">Shuffle</button>
 <button class="btn" (click)="solve()">Solve</button>
 <select [(ngModel)]="boardSize" (change)="setBoardSize(boardSize)">
-    <option *ngFor="let item of [5,6,7,8,9,10]" >{{item}}</option>
+    <option *ngFor="let item of [3,5]" >{{item}}</option>
 </select>
 <div class="board-wrapper">
     <div class="board-row" *ngFor="let item of board | keyvalue">
